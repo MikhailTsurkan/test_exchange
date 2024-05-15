@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "test-exchange-api"
+version = "0.1.0"
+description = ""
+authors = ["Tsurkan <mikh.tsurkan@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
