@@ -1,6 +1,7 @@
 services:
   test_exchange:
-    image: exchange_docker:latest
+    build:
+      dockerfile: ./Dockerfile
     container_name: test_exchange
     env_file:
       - .env
