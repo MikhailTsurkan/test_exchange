@@ -1,0 +1,8 @@
+services:
+  test_exchange:
+    image: exchange_docker:latest
+    container_name: test_exchange
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"

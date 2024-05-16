@@ -18,7 +18,7 @@ def exchange_view(request):
 
     try:
         value = float(value)
-    except ValueError:
+    except (ValueError, TypeError):
         return Response({"error": "bad data for request"}, status=status.HTTP_400_BAD_REQUEST)
 
     try:
