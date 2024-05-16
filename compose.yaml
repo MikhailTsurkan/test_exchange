@@ -1,0 +1,9 @@
+services:
+  test_exchange:
+    build:
+      dockerfile: ./Dockerfile
+    container_name: test_exchange
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
